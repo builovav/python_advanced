@@ -32,7 +32,7 @@ class Parkings(db.Model):  # type: ignore
     parking_id = db.relationship("Clientparking", back_populates="parking")
 
     def __repr__(self):
-        return f"Парковка: {self.address, self.opened, \
+        return f"Парковка: {self.address, self.opened, \n
                             self.count_places, self.count_available_places}"
 
     def to_json(self) -> Dict[str, Any]:
