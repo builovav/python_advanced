@@ -19,7 +19,6 @@ app_test: dict = {
     "TESTING": True,
 }
 
-
 def create_app(test_config=app_test):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(test_config)
