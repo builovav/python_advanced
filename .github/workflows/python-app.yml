@@ -34,7 +34,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install dependencies
         run: |
-          pip install requirements.txt
+          pip install -r requirements.txt
 
       # Runs a set of commands using the runners shell
       - name: Lint with black
