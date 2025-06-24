@@ -43,16 +43,16 @@ jobs:
           
       - name: Lint with isort
         run:
-          isort --check-only flaskr/main/
+          isort --check-only .github/workflows/flaskr/main/
 
       - name: Lint with mypy
         run:
-          mypy flaskr/main/
+          mypy .github/workflows/flaskr/main/
                
       - name: Lint with flake8
         run:
-          flake8 flaskr/main/
+          flake8 .github/workflows/flaskr/main/
       
       - name: Test with pytest
         run: |
-          pytest flaskr/tests/
+          pytest .github/workflows/flaskr/tests/
