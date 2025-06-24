@@ -1,8 +1,7 @@
 from typing import Any, Dict
 
-from sqlalchemy import UniqueConstraint
-
 from flaskr.main.app import db
+from sqlalchemy import UniqueConstraint
 
 
 class Clients(db.Model):  # type: ignore
