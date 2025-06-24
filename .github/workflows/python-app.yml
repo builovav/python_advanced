@@ -39,7 +39,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Lint with black
         run: |
-          black --diff --check flaskr/main/
+          black --diff --check .github/workflows/flaskr/main/
           
       - name: Lint with isort
         run:
